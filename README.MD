@@ -62,6 +62,15 @@ Here we declare a list in python code...
 We later add an argument in the render_template function assigning the argument the value of our list variable.
 then we can write the python code in our html on the specific page.
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Adding Jinja templating syntax to python file
+name = []
+@app.route("/")
+def index():
+	return render_template("index.html", my_name = name)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 In HTML we use JINJa
 
 
