@@ -5,6 +5,7 @@ A Minimal Application
 A minimal Flask application looks something like this:
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -15,6 +16,7 @@ def hello_world():
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 So what did that code do?
 
 First we imported the Flask class. An instance of this class will be our WSGI application.
@@ -26,6 +28,7 @@ We then use the route() decorator to tell Flask what URL should trigger our func
 The function returns the message we want to display in the user’s browser. The default content type is HTML, so HTML in the string will be rendered by the browser.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 To run the application, use the flask command or python -m flask. You need to tell the Flask where your application is with the --app option.
 
 $ flask --app hello run
@@ -34,6 +37,7 @@ $ flask --app hello run
 
 
  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ 
  USING RENDERING_TEMPLATE
  CODE:
  from flask import Flask, render_template
