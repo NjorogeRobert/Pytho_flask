@@ -66,7 +66,9 @@ then we can write the python code in our html on the specific page.
 
 
 Adding Jinja templating syntax to python file
+
 name = []
+
 @app.route("/")
 def index():
 	return render_template("index.html", my_name = name)
