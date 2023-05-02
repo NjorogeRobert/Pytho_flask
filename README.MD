@@ -63,6 +63,8 @@ We later add an argument in the render_template function assigning the argument 
 then we can write the python code in our html on the specific page.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 Adding Jinja templating syntax to python file
 name = []
 @app.route("/")
